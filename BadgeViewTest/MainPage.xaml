@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfBadge="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+
+             x:Class="BadgeViewTest.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+        <sfBadge:SfBadgeView
+            BadgeText="82"
+
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            HeightRequest="100"
+            WidthRequest="100"
+            >
+            <sfBadge:SfBadgeView.Content>
+                <Button
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    Text="Test"
+                    >
+
+                </Button>
+            </sfBadge:SfBadgeView.Content>
+            <sfBadge:SfBadgeView.BadgeSettings>
+                <sfBadge:BadgeSettings
+                    Background="DeepPink"
+                    TextColor="GreenYellow"
+                    />
+
+            </sfBadge:SfBadgeView.BadgeSettings>
+        </sfBadge:SfBadgeView>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
